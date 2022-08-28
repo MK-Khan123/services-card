@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Portfolio RTex</title>
+</head>
+
+<body>
+    <!-- ROTATING BLUE AND GREY COLORED ELLIPSES -->
+    <svg class="rotating-elliptical-circle" viewBox="0 0 1920 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="left-gray-ellipse"
+            d="M417.921 380.694C396.233 319.013 354.202 266.548 298.74 231.924C243.278 197.301 177.685 182.579 112.746 190.18C47.8073 197.781 -12.6128 227.252 -58.5802 273.748C-104.548 320.243 -133.326 380.996 -140.184 446.018C-147.042 511.04 -131.572 576.46 -96.3162 631.523C-61.0606 686.585 -8.11851 728.013 53.8058 748.995C115.73 769.977 182.951 769.263 244.416 746.972C305.881 724.681 357.932 682.139 392.011 626.341"
+            stroke="#AAB6C4" stroke-width="40" />
+        <path class="right-gray-ellipse"
+            d="M1511.65 679.94C1557.88 726.173 1618.47 755.298 1683.45 762.528C1748.43 769.757 1813.94 754.661 1869.2 719.721C1924.46 684.78 1966.19 632.076 1987.53 570.273C2008.86 508.469 2008.53 441.245 1986.6 379.654C1964.66 318.062 1922.41 265.769 1866.81 231.371C1811.21 196.974 1745.55 182.52 1680.65 190.385C1615.74 198.251 1555.44 227.968 1509.66 274.651C1463.89 321.333 1435.35 382.203 1428.76 447.252"
+            stroke="#AAB6C4" stroke-width="40" />
+        <path class="rotating-blue-ellipse"
+            d="M373.456 836.878C393.499 899.112 434.122 952.674 488.646 988.758C543.169 1024.84 608.348 1041.3 673.466 1035.43C738.584 1029.55 799.765 1001.69 846.95 956.435C894.136 911.176 924.517 851.208 933.098 786.391C941.68 721.574 927.952 655.767 894.17 599.788C860.389 543.808 808.565 500.99 747.219 478.372C685.874 455.754 618.658 454.682 556.623 475.334C494.587 495.985 441.425 537.131 405.877 592.005"
+            stroke="#5A86CC" stroke-width="40" />
+    </svg>
+    <!-- END OF ROTATING BLUE AND GREY COLORED ELLIPSES -->
+
+    <!-- NAVBAR STARTS -->
+    <header>
+        <nav>
+            <img src="./assets/logo/logo-dark.svg" class="logo dark-logo" />
+            <img src="./assets/logo/logo-light.svg" class="logo light-logo logo-hide" />
+            <div class="nav-link-container">
+                <ul class="nav-links">
+                    <li class="cursor-scale small"><a href="#about" class="about-link">About</a></li>
+                    <li class="cursor-scale small"><a href="#services" class="services-link">Service</a></li>
+                    <li class="cursor-scale small"><a href="#work" class="work-link">Work</a></li>
+                    <li class="cursor-scale small"><a href="#contact" class="contact-link">Contact</a></li>
+                </ul>
+                <div class="img-container">
+                    <img src="assets/img/Frame 11.svg" alt="dark mode photo" class="verson-img dark-mode" />
+                    <img src="assets/img/Frame 12.svg" alt="light mode photo" class="verson-img light-mode hide" />
+                </div>
+            </div>
+            <img src="./assets/mobile/icon/charm_menu-hamburger.svg" alt="hamburger menu icon" class="hamburger-icon" />
+        </nav>
+    </header>
+    <!-- NAVBAR ENDS -->
+
+    <!-- CURSOR -->
+    <div class="cursor">
+        <div class="cursor-inner"><span>click</span></div>
+    </div>
+    <!-- CURSOR -->
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- MAIN SECTION-->
+            <section id="main-section" class="panel">
+                <div>
+                    <!-- change by anik -->
+                    <div id="main-content">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1 class="animate-charcter"> Rainier Technologies</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ellipse-group">
+                        <img src="./assets/svgs/blue_ellipse.svg" id="blue-ellipse" alt="" />
+                        <img src="./assets/svgs/hidden_gray_ellipse.svg" id="hidden-gray-ellipse" alt="" />
+                        <img src="./assets/svgs/gray_ellipse.svg" alt="" id="gray-ellipse" />
+                        <img src="./assets/svgs/red_ellipse.svg" id="red-ellipse" alt="" />
+                    </div>
+
+                    <div id="polygons" class="cursor-scale">
+                        <img src="./assets/svgs/yellow_polygon.svg" id="yellow-polygon" alt="" />
+                        <img src="./assets/svgs/blue_polygon.svg" id="blue-polygon" alt="" />
+                        <img src="./assets/svgs/red_polygon.svg" id="red-polygon" alt="" />
+                    </div>
+
+                    <div id="ellipse-group-mobile">
+                        <img src="./assets/mobile/ellipse/Ellipse_gray.svg" alt="gray ellipse"
+                            id="mobile-gray-ellipse" />
+                        <img src="./assets/mobile/ellipse/Ellipse_gray_small.svg" alt="gray ellipse small"
+                            id="mobile-gray-small-ellipse" />
+                        <img src="./assets/mobile/ellipse/Ellipse_red.svg" alt="red ellipse" id="mobile-red-ellipse" />
+                    </div>
+
+                    <div id="polygons-mobile">
+                        <img src="./assets/mobile/polygon/Polygon_yellow.svg" alt="yellow polygon"
+                            id="mobile-yellow-polygon" />
+                        <img src="./assets/mobile/polygon/Polygon_blue.svg" alt="blue polygon"
+                            id="mobile-blue-polygon" />
+                        <img src="./assets/mobile/polygon/Polygon_red.svg" alt="red polygon" id="mobile-red-polygon" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- PANEL 1 STARTS (MAIN BANNER) -->
+            <section class="panel" id="panel-one">
+                <div id="panel-one-content">
+                    <div id="panel-one-content-heading">
+                        <h1 class="cursor-scale dark" id="panel-name">
+                            <span>Rainier</span> <span>Technologies</span>
+                        </h1>
+                        <p class="cursor-scale dark-text" id="panel-text">
+                            Working towards a better tomorrow
+                        </p>
+                    </div>
+                    <div id="panel-one-content-body">
+                        <div>
+                            <p>We Automate</p>
+                        </div>
+                        <div>
+                            <p>We Innovate</p>
+                        </div>
+                        <div>
+                            <p>You Accelerate</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PANEL 1 ENDS -->
+
+            <!-- PANEL 2 STARTS (ABOUT SECTION) -->
+            <section class="panel" id="panel-two">
+                <h2 class="heading-about">About</h2>
+                <div id="about-main">
+                    <div id="about-main-heading">
+                        <h2>Who we are?</h2>
+                        <p>
+                            Rainier technologies is a us based health tech startup. We are
+                            a self driven cross-functional team that specialize is the
+                            healthcare sector, What had started with a dream to we aim to
+                            allow healthcare to evolveand our goal is to make the
+                            healthcare industry go from paper-based to paperless!
+                        </p>
+                    </div>
+                    <div id="about-main-body">
+                        <div id="vision"></div>
+                        <span id="vision-text">vision</span>
+                        <div id="circle">
+                            <img src="./assets/svgs/round_ellipse.svg" alt="" />
+                        </div>
+                        <div id="mission"></div>
+                        <span id="mission-text">mission</span>
+                    </div>
+
+                    <!-- For mobile device -->
+                    <div id="about-main-mobile">
+                        <div class="content-container">
+                            <div class="circel-mobile"></div>
+                            <div class="vision-container">
+                                <span id="vision-text-mobile">Vision</span>
+                            </div>
+                            <div class="mission-container">
+                                <span id="mission-text-mobile">Mission</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="vision-missions">
+                        <div id="vision-panel">
+                            <h1>Our vision</h1>
+                            <p>
+                                As our main motto id "Automate, Accelerate" we aim to be a
+                                leading force in helping companies to accelerate their
+                                buissness process, especially in the healthcare system using
+                                Mechine Learning and Artificial Intelligence.
+                            </p>
+                        </div>
+                        <div id="mission-panel">
+                            <h1>Our mission</h1>
+                            <p>
+                                As our main motto id "Automate, Accelerate" we aim to be a
+                                leading force in helping companies to accelerate their
+                                buissness process, especially in the healthcare system using
+                                Mechine Learning and Artificial Intelligence.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="about-main-footer">
+                        <span class="cursor-hover" id="healthcare-btn">Why Healthcare?</span>
+                        <span class="cursor-hover" id="automation-btn">Why Automation?</span>
+                        <div id="footer-panel">
+                            <div id="healthcare-panel">
+                                <div id="healthcare-panel-content">
+                                    <h1 class="healthcare-panel-content-heading">
+                                        Why Healthcare?
+                                    </h1>
+                                    <p class="healthcare-panel-content-text">
+                                        The need for a systematic digitized
+                                        procedure at a Medical Health care
+                                        (MHC) knows no bounds for
+                                        maintaining large volumes of
+                                        information. Automation can add
+                                        efficiency and accuracy to the
+                                        healthcare sector, which has seen a
+                                        significant increase in the number
+                                        of patients, with an ongoing rapid
+                                        shift to digitalization in the past
+                                        few years
+                                    </p>
+                                    <img src="./assets/svgs/figure_group_one.svg" alt="" />
+                                </div>
+                                <div class="healthcare-panel-how-text-box">
+                                    <p class="how-text">How ?</p>
+                                </div>
+                                <div id="automation-text-box">
+                                    <h3 id="automation-heading">
+                                        Automation is the one-stop solution
+                                        that can take away <br />
+                                        many repetitive tasks from the
+                                        healthcare system, such <br />
+                                        as:
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            Entering repetitive data into
+                                            the system
+                                        </li>
+                                        <li>Managing inventory</li>
+                                        <li>Digitizing patient files</li>
+                                        <li>Set up appointments</li>
+                                        <li>Billing patients</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="automation-panel">
+                                <div id="automation-panel-content">
+                                    <h1>Why Healthcare?</h1>
+                                    <p>
+                                        The need for a systematic digitized procedure at a
+                                        Medical Health care (MHC) knows no bounds for
+                                        maintaining large volumes of information. Automation can
+                                        add efficiency and accuracy to the healthcare sector,
+                                        which has seen a significant increase in the number of
+                                        patients, with an ongoing rapid shift to digitalization
+                                        in the past few years
+                                    </p>
+                                    <div id="animated-circles">
+                                        <img src="./assets/svgs/round_gray_transparent.svg" alt=""
+                                            id="animated-circles-1" />
+                                        <img src="./assets/svgs/round_gray_transparent.svg" alt=""
+                                            id="animated-circles-2" />
+                                        <img src="./assets/svgs/round_gray_transparent.svg" alt=""
+                                            id="animated-circles-3" />
+                                        <img src="./assets/svgs/round_gray_transparent.svg" alt=""
+                                            id="animated-circles-4" />
+                                        <img src="./assets/svgs/round_gray_transparent.svg" alt=""
+                                            id="animated-circles-5" />
+                                        <span id="animated-circles-text-1">INFLEXIBILITY</span>
+                                        <span id="animated-circles-text-2">LIMITED ACCESS</span>
+                                        <span id="animated-circles-text-3">LACK OF EFFICIENCY</span>
+                                    </div>
+
+                                    <div id="animated-circles-mobile">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-1">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-2">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-3">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-4">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-5">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-6">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-7">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-8">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-9">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-10">
+                                        <img src="./assets/svgs/about-mobile/Frame 63.svg" alt=""
+                                            id="amimated-circel-mobile-11">
+                                        <!-- <img src="./assets/svgs/about-mobile/Frame 63.svg" alt="" id="amimated-circel-mobile-12"> -->
+                                        <img src="./assets/svgs/about-mobile/Group 213.svg" alt=""
+                                            id="animated-circles-mobile-text-1">
+                                        <img src="./assets/svgs/about-mobile/Group 212.svg" alt=""
+                                            id="animated-circles-mobile-text-2">
+                                        <img src="./assets/svgs/about-mobile/Group 211.svg" alt=""
+                                            id="animated-circles-mobile-text-3">
+                                        <span id="animated-mobile-text-1">LACK OF EFFICIENCY</span>
+                                        <span id="animated-mobile-text-2">LIMITED ACCESS</span>
+                                        <span id="animated-mobile-text-3">INFLEXIBILITY</span>
+                                    </div>
+                                    <span id="span-automation">
+                                        The prime caveats of the healthcare sector that has kept
+                                        it at bay in terms of modernization are.
+                                    </span>
+                                    <img src="./assets/svgs/figure_group_two.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PANEL 2 ENDS -->
+
+            <!-- PANEL 3 STARTS (SERVICES SECTION) -->
+            <section class="panel" id="panel-three">
+                <div id="services">
+                    <div id="services-main">
+
+                        <!-- This is the first appearance of the services section -->
+                        <h2 id="services-title">We turn ideas into Products</h2>
+                        <div id="ai-vector">
+                            <img src="./assets/svgs/services/ai_vector.svg" alt="" />
+                            <div id="ai-vector-letter">
+                                <img src="./assets/svgs/services/letter-a.svg" alt="" />
+                                <img src="./assets/svgs/services/letter-i.svg" alt="" />
+                            </div>
+                        </div>
+                        <h4 id="services-tagline">We Create You Prosper</h4>
+
+                        <!-- Arrow SVGs -->
+                        <img id="top-left-arrow" src="./assets/svgs/services/services-hover/top-left-arrow.svg"
+                            alt="" />
+                        <img id="top-right-arrow" src="./assets/svgs/services/services-hover/top-right-arrow.svg"
+                            alt="" />
+                        <img id="bottom-left-arrow" src="./assets/svgs/services/services-hover/bottom-left-arrow.svg"
+                            alt="" />
+                        <img id="bottom-right-arrow" src="./assets/svgs/services/services-hover/bottom-right-arrow.svg"
+                            alt="" />
+
+                        <!-- When you click on the circular shaped balls with names of services on it, this section appears with the details of respective services. -->
+                        <div id="services-details">
+                            <div id="migration-details" onclick="fadingAnimation('migration', 'top-left')">
+                                <div class="migration-border-gradient">
+                                    <p class="migration-content">
+                                        Migration
+                                    <p class="migration-content-fine-points">Data Migration</p>
+                                    <p class="migration-content-fine-points">Application Migration</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="automation-details" onclick="fadingAnimation('automation', 'top-right')">
+                                <div class="automation-border-gradient">
+                                    <p class="automation-content">
+                                        Automation
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="engineering-details" onclick="fadingAnimation('engineering', 'bottom-left')">
+                                <div class="engineering-border-gradient">
+                                    <p class="engineering-content">
+                                        Engineering
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="visualization-details" onclick="fadingAnimation('visualization', 'bottom-right')">
+                                <div class="visualization-border-gradient">
+                                    <p class="visualization-content">
+                                        Visualization
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- This section appears just after the mouse enter event of the AI Vector. -->
+                        <div id="migration" class="circular-shape" onclick="fadingAnimation(`${id}`,'top-left')">
+                            <div id="migration-text">Migration</div>
+                        </div>
+                        <div id="automation" class="circular-shape" onclick="fadingAnimation(`${id}`,'top-right')">
+                            <div id="automation-text">Automation</div>
+                        </div>
+                        <div id="engineering" class="circular-shape" onclick="fadingAnimation(`${id}`,'bottom-left')">
+                            <div id="engineering-text">Engineering</div>
+                        </div>
+                        <div id="visualization" class="circular-shape"
+                            onclick="fadingAnimation(`${id}`,'bottom-right')">
+                            <div id="visualization-text">Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel-three-ellipse">
+                    <img src="./assets/svgs/red_ellipse.svg" id="panel-three-red-ellipse" alt="" />
+                </div>
+
+                <div id="services-mobile">
+                    <div id="services-mobile-wrapper" class="mobile-glass-background">
+                        <h4 id="services-mobile-title">We Create You Prosper</h4>
+                        <div id="services-mobile-ai-vector" onmouseenter="hoverOverServicesMobile()">
+                            <img src="./assets/svgs/services/ai_vector-small.svg" alt="" />
+                            <div id="services-mobile-ai-vector-letter">
+                                <div id="letter-a-container">
+                                    <img class="letter-a" src="./assets/svgs/services/letter-a-small.svg" alt="" />
+                                </div>
+                                <div id="letter-i-container">
+                                    <img class="letter-i" src="./assets/svgs/services/letter-i-small.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <h4 id="services-mobile-tagline">We turn ideas into Products</h4>
+                    </div>
+                </div>
+            </section>
+            <!-- PANEL 3 ENDS -->
+            
+            <!-- <section id="services-mobile-cards"> -->
+                
+                <div id="visualization-card" class="card panel">
+                    <!-- <svg id="scrolling-svg-container" width="364" height="2674" viewBox="0 0 364 2674" fill="none" preserveAspectRatio="xMidYMid meet">
+                        <path id="scrolling-svg"
+                            d="M176.434 0.999992C184.737 267.52 221.944 588.112 63.4971 634.5C-94.9495 680.888 140.497 691 159.997 654C179.497 617 -134.165 652.306 69.857 668.038C333.739 688.386 -37.7465 547.64 23.9053 706.73C81.5574 855.499 29.3982 957.489 76.7151 1036.88C124.032 1116.26 177.812 1124.04 224.997 1133C576.575 1199.74 67.3654 1246.12 205.794 1169.5C292.462 1121.53 407.421 1184.5 333.498 1184.5C259.576 1184.5 355.066 1575.64 351.998 1609C343.998 1696 96.4981 1746.87 22.9982 1710C-19.4384 1688.71 119.498 1677 193.997 1683C204.463 1683.84 335.351 1692 333.497 1796C328.498 2076.5 328.197 2171.48 351.533 2236.5M351.533 2236.5C351.533 2285 145.533 2225 177.533 2217C377.467 2167.02 424.033 2248.5 218.033 2248.5C42.4977 2248.5 369.532 2158 351.533 2236.5ZM351.533 2236.5C327.033 2429.5 386.122 2716.08 351.534 2668C301.535 2598.5 16.5344 2705.5 42.0344 2650C67.5344 2594.5 -35.9656 2685 96.0344 2641"
+                            stroke="white" />
+                    </svg> -->
+                    Visualization
+                    <div class="background-card-right"></div>
+                </div>
+                <!-- <div id="automation-card" class="card panel">
+                    Automation
+                    <div class="background-card-left"></div>
+                </div>
+                <div id="engineering-card" class="card panel">
+                    Engineering
+                    <div class="background-card-right"></div>
+                </div>
+                <div id="migration-card" class="card panel">
+                    Migration
+                    <div class="background-card-left"></div>
+                </div> -->
+            <!-- </section>                 -->
+
+            <!-- PANEL 4 (OUR WORK SECTION) STARTS -->
+            <section class="panel" id="panel-four">                
+                <h2 id="work-main-title">Work</h2>
+                <div id="work-main">
+                    <div id="work-main-slider">
+                        <div id="slider-content">
+                            <h4 id="work-main-heading-one">Our Works</h4>
+                        </div>
+                        <div id="slider-btn">
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div id="work-main-content">
+                        <div id="work-main-content-one">
+                            <h1>Clinic Management</h1>
+                        </div>
+                        <div id="work-main-content-two">
+                            <h1>Dental Management</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="work-main-mobile" onclick="clinicManagementAnimation()">                    
+                    <div id="work-main-mobile-button">
+                        <img id="work-main-mobile-button-left" src="./assets/svgs/work-section/left-button.svg" alt="">
+                        <img id="work-main-mobile-button-right" src="./assets/svgs/work-section/right-button.svg"
+                            alt="">
+                    </div>
+                    <div id="work-main-mobile-content">
+                        <div>
+                            <h3 id="work-main-mobile-content-heading">Clinic Management</h3>
+                            <div>
+                                <img id="work-main-mobile-content-pic"
+                                    src="./assets/svgs/work-section/clinic-management-pic.svg" alt="">
+                            </div>
+                            <h4 id="work-main-mobile-content-sub-heading">A system to make life seamless for both
+                                patients
+                                and clinic</h4>
+                            <ul id="work-main-mobile-content-points">
+                                <li>Ensuring Safe And Quality Care</li>
+                                <li>Increased Productivity</li>
+                                <li>Help Doctors Thrive</li>
+                                <li>Tailored To Fit All Requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PANEL 4 ENDS -->
+
+            <!-- PANEL 5 STARTS (CONTACT FORM SECTION) -->
+            <section class="panel" id="panel-five">
+                <h2 class="panel-five-heading">Contact</h2>
+                <div id="panel-five-content">
+                    <div id="panel-five-body">
+                        <div id="email-contact-form">
+                            <h4>CONTACT US</h4>
+                            <form class="contact-form" method="POST" action="">
+                                <div class="boxes">
+                                    <div class="input-box">
+                                        <input type="text" required />
+                                        <span class="input-text">Name</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="boxes">
+                                    <div class="input-box">
+                                        <input type="text" required />
+                                        <span class="input-text">Email</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="boxes">
+                                    <div class="input-box textarea">
+                                        <textarea required></textarea>
+                                        <span class="input-text">Type message here...</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="boxes">
+                                    <div class="send-btn">
+                                        <button class="button glass" type="submit">Submit</button>
+                                    </div>
+                                </div>
+
+                                <!-- For mobile device -->
+                                <div class="form-control">
+                                    <input type="text" name="name" placeholder="Name">
+                                </div>
+                                <div class="form-control">
+                                    <input type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-control">
+                                    <textarea name="message" placeholder="Message..." rows="4"></textarea>
+                                </div>
+                                <div class="form-control">
+                                    <button class="submit-btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="address">
+                            <div>
+                                <img src="./assets/svgs/contact-form/avatar_network.svg" alt=""
+                                    class="contact-light-img" />
+                                <img src="./assets/svgs/contact-form/Group-light.svg" alt=""
+                                    class="contact-dark-img hide">
+                            </div>
+                            <div id="address-info">
+                                <h4>Address:</h4>
+                                <ul>
+                                    <li>
+                                        USA Office: 1251 Birch Street Edmonds, WA 98020 USA.
+                                    </li>
+                                    <li>Bangladesh Office: 2/3 Lalmatia, Block-A, Dhaka.</li>
+                                </ul>
+                                <h4>Contact:</h4>
+                                <p>info@rtexus.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel-five-ellipse">
+                    <img src="./assets/svgs/red_ellipse.svg" id="panel-five-red-ellipse" alt="" />
+                </div>
+
+                <!-- FOOTER STARTS -->
+                <footer id="page-footer">
+                    <div class="footer-grid">
+                        <div class="footer-content">
+                            <h3 class="footer-header">Categories</h3>
+                            <div class="footer-links">
+                                <a href="#">First Link</a>
+                                <a href="#">Second Link</a>
+                                <a href="#">Third Link</a>
+                                <a href="#">Fourth Link</a>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <h3 class="footer-header">Categories</h3>
+                            <div class="footer-links">
+                                <a href="#">First Link</a>
+                                <a href="#">Second Link</a>
+                                <a href="#">Third Link</a>
+                                <a href="#">Fourth Link</a>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <h3 class="footer-header">Categories</h3>
+                            <div class="footer-links">
+                                <a href="#">First Link</a>
+                                <a href="#">Second Link</a>
+                                <a href="#">Third Link</a>
+                                <a href="#">Fourth Link</a>
+                            </div>
+                        </div>
+                        <div class="footer-content subscribe">
+                            <h3 class="footer-header">Subscribe</h3>
+                            <form>
+                                <input type="email" placeholder="example@gmail.com" />
+                                <button class="btn-submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social-media-content-box">
+                        <img src="./assets/icon/linkedin-dartk-version.svg" alt="linkedIn logo dark version"
+                            class="linkedIn-dark-logo" />
+                        <img src="./assets/icon/linkedin-light-version.svg" alt="linkedIn light version"
+                            class="linkedIn-light-logo hide-logo" />
+                        <p class="copyright-text">
+                            &copy; 2020 - rainier Technologies
+                        </p>
+                    </div>
+                </footer>
+                <!-- FOOTER ENDS -->
+
+                <footer id="page-footer-mobile">
+                    <div class="social-media-links">
+                        <img src="./assets/mobile/icon/linkedIn.svg" alt="linkedIn icon">
+                        <img src="./assets/mobile/icon/facebook.svg" alt="Facebook icon">
+                        <img src="./assets/mobile/icon/twitter.svg" alt="Twitter icon">
+                    </div>
+                    <div>
+                        <p>&copy; 2020 - rainier Technologies</p>
+                    </div>
+                </footer>
+            </section>
+            <!-- PANEL 5 ENDS -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-- <script src="./assets/script/script.js"></script> -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

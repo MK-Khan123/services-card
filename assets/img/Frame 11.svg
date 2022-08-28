@@ -1,0 +1,32 @@
+<svg width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_407_185)">
+<rect x="1" y="1" width="45" height="42" rx="7" fill="#2C3746"/>
+<g clip-path="url(#clip0_407_185)">
+<path d="M23.9997 17.1514C21.3219 17.1514 19.1512 19.3222 19.1512 21.9999C19.1512 24.6776 21.3219 26.8484 23.9997 26.8484C26.6774 26.8484 28.8481 24.6776 28.8481 21.9999C28.8481 19.3222 26.6774 17.1514 23.9997 17.1514Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 32.6666V30.7272" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 13.2727V11.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.5439 29.5442L30.167 28.1672" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.8325 15.8326L16.4555 14.4557" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.6665 22H32.7271" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.2725 22H13.3331" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.5439 14.4557L30.167 15.8326" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.8325 28.1672L16.4555 29.5442" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="1" y="1" width="45" height="42" rx="7" stroke="#2C3746"/>
+</g>
+<defs>
+<filter id="filter0_i_407_185" x="0.5" y="0.5" width="50" height="47" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_407_185"/>
+</filter>
+<clipPath id="clip0_407_185">
+<rect width="24" height="24" fill="white" transform="translate(36 34) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg>
