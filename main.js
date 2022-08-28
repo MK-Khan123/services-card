@@ -552,6 +552,12 @@ window.addEventListener("DOMContentLoaded", function () {
   const panelFour = document.querySelector("#panel-four");
   const panelFive = document.querySelector("#panel-five");
 
+  //! panels for mobile screen display
+  const panelVisualization = document.querySelector(".visualization-card-panel");
+  const panelAutomation = document.querySelector(".automation-card-panel");
+  const panelEngineering = document.querySelector(".engineering-card-panel");
+  const panelMigration = document.querySelector(".migration-card-panel");
+
   //! rotating elliptical circle selector
   const ellipticalCircle = gsap.utils.selector(".rotating-elliptical-circle");
 
@@ -1751,28 +1757,19 @@ window.addEventListener("DOMContentLoaded", function () {
       });
 
       //! for movile device panel animation
-      forMobileDevice(panelOne, panelTwo);
+      forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, panelAutomation, panelEngineering, panelMigration, panelFour, panelFive);
     },
 
     //this will be apply for all secreen sci
     all: function () {
       forDesktopScreen(panelOne, panelTwo, panelThree, panelFour, panelFive);
-    },
-    function() {
-      blueAndGrayDesktop(
-        panelTwo,
-        panelThree,
-        panelFour,
-        panelFive,
-        ellipticalCircle
-      );
-    },
+    }
   });
 
   //! rotating blue and gray colored ellipse animation initialization
   ScrollTrigger.matchMedia({
-    "(min-width: 800px)": function () {},
-    "(max-width: 799px)": function () {},
+    "(min-width: 800px)": function () { },
+    "(max-width: 799px)": function () { },
     all: function () {
       blueAndGrayDesktop(
         panelTwo,
@@ -1909,7 +1906,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => {}, "+=1");
+    .add(() => { }, "+=1");
   //PANEL 2 Ends
 
   //PANEL 3 Starts
@@ -1958,7 +1955,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => {}, "+=1");
+    .add(() => { }, "+=1");
   //PANEL 3 Ends
 
   //PANEL 4 Starts
@@ -2008,7 +2005,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => {}, "+=1");
+    .add(() => { }, "+=1");
   //PANEL 4 Ends
 
   //PANEL 5 Starts
@@ -2058,7 +2055,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => {}, "+=1");
+    .add(() => { }, "+=1");
   //PANEL 5 Ends
 }
 
@@ -2305,7 +2302,7 @@ function forDesktopScreen(
 
 //change from anik
 //! animator for mobile screen size
-function forMobileDevice(panelOne, panelTwo) {
+function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, panelAutomation, panelEngineering, panelMigration, panelFour, panelFive) {
   //animation ellipes for mobile screen size
 
   // ? panel one starts
@@ -2450,7 +2447,427 @@ function forMobileDevice(panelOne, panelTwo) {
       0
     );
 
-  // ? panel two end
+  // ? panel three starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelThree,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "6vw",
+        y: "315vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-73vw",
+        y: "302vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-162vw",
+        y: "285vh",
+        rotation: "-200deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-18vw",
+        y: "302vh",
+        rotation: "245deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "-14vw",
+        y: "297vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        x: "7vw",
+        y: "302vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel three ends
+
+  // ? panel visualization starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelVisualization,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "6vw",
+        y: "415vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-94vw",
+        y: "399vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-162vw",
+        y: "365vh",
+        rotation: "-200deg",
+        duration: 1,        
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-5vw",
+        y: "398vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "2vw",
+        y: "394vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        y: "402vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel visualization ends
+
+  // ? panel automation starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelAutomation,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "6vw",
+        y: "315vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-115vw",
+        y: "496vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-162vw",
+        y: "285vh",
+        rotation: "-200deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-18vw",
+        y: "494vh",
+        rotation: "245deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "-14vw",
+        y: "491vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        x: "7vw",
+        y: "502vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel automation ends
+
+  // ? panel engineering starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelEngineering,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "6vw",
+        y: "315vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-136vw",
+        y: "593vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-162vw",
+        y: "285vh",
+        rotation: "-200deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-5vw",
+        y: "590vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "2vw",
+        y: "588vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        y: "602vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel engineering ends
+
+  // ? panel migration starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelMigration,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "6vw",
+        y: "315vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-157vw",
+        y: "690vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-162vw",
+        y: "285vh",
+        rotation: "-200deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-18vw",
+        y: "686vh",
+        rotation: "245deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "2vw",
+        y: "685vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        y: "702vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel migration ends
+
+  // ? panel four starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelFour,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "6vw",
+        y: "315vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-178vw",
+        y: "787vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-162vw",
+        y: "285vh",
+        rotation: "-200deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-5vw",
+        y: "782vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "2vw",
+        y: "782vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        y: "802vh",
+        rotation: "0deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel migration ends
 }
 
 //Functions for mobile display size (max-width: 576px)

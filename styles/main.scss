@@ -3066,9 +3066,7 @@ nav {
   // panel two end
 
   // panel three start
-  #panel-three {
-    position: relative;
-    // height: 335vh;
+  #panel-three {    
 
     #services,
     #panel-three-ellipse {
@@ -3166,7 +3164,6 @@ nav {
     width: 100%;
     margin-top: 7rem;
     margin-left: 1rem;
-    text-align: right;
 
     &-title {
       position: absolute;
@@ -3192,7 +3189,7 @@ nav {
     position: relative;
     width: 100%;
     margin-top: 7rem;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
 
     &-title {
       position: absolute;
@@ -3231,7 +3228,7 @@ nav {
     position: relative;
     width: 100%;
     margin-top: 7rem;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
 
     &-title {
       position: absolute;

@@ -2781,9 +2781,6 @@ nav ul .verson-img:hover {
     position: absolute;
     left: -100px;
   }
-  #panel-three {
-    position: relative;
-  }
   #panel-three #services,
 #panel-three #panel-three-ellipse {
     display: none;
@@ -2862,7 +2859,6 @@ nav ul .verson-img:hover {
     width: 100%;
     margin-top: 7rem;
     margin-left: 1rem;
-    text-align: right;
   }
   #visualization-card-title {
     position: absolute;
@@ -2885,7 +2881,7 @@ nav ul .verson-img:hover {
     position: relative;
     width: 100%;
     margin-top: 7rem;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
   }
   #automation-card-title {
     position: absolute;
@@ -2920,7 +2916,7 @@ nav ul .verson-img:hover {
     position: relative;
     width: 100%;
     margin-top: 7rem;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
   }
   #migration-card-title {
     position: absolute;
