@@ -3158,9 +3158,9 @@ nav {
     }
   }
 
-  //Extended version of pnael-three (CARDS)
+  //Extended version of panel-three (CARDS)
 
-  .card {
+  .red-card {
     // position: relative;
     box-sizing: border-box;
     font-family: "Comfortaa", cursive;
@@ -3169,17 +3169,10 @@ nav {
     letter-spacing: 2px;
     background-color: #d13e3e;
     width: 95%;
-    height: 493px;
+    // height: 493px;
     border-radius: 20px;
 
-    // #scrolling-svg-container {
-    //   position: absolute;
-    //   top: -38rem;
-    //   left: -0.5rem;
-    //   z-index: 5;
-    // }
-
-    .background-card-right {
+    .blue-card-right {
       position: absolute;
       background-color: #2868e4;
       top: 1.5rem;
@@ -3190,7 +3183,7 @@ nav {
       z-index: -5;
     }
 
-    .background-card-left {
+    .blue-card-left {
       position: absolute;
       background-color: #2868e4;
       top: 1.5rem;
@@ -3207,6 +3200,13 @@ nav {
     text-align: left;
     padding-left: 3rem;
     padding-top: 2rem;
+
+    #scrolling-svg-container {
+        position: absolute;
+        top: -38rem;
+        left: -0.5rem;
+        z-index: 5;
+      }
   }
 
   #automation-card {

@@ -2854,7 +2854,7 @@ nav ul .verson-img:hover {
     border-radius: 1rem;
     box-shadow: -2px 4px 11px -2px rgba(0, 0, 0, 0.75);
   }
-  .card {
+  .red-card {
     box-sizing: border-box;
     font-family: "Comfortaa", cursive;
     font-size: 0.875rem;
@@ -2862,10 +2862,9 @@ nav ul .verson-img:hover {
     letter-spacing: 2px;
     background-color: #d13e3e;
     width: 95%;
-    height: 493px;
     border-radius: 20px;
   }
-  .card .background-card-right {
+  .red-card .blue-card-right {
     position: absolute;
     background-color: #2868e4;
     top: 1.5rem;
@@ -2875,7 +2874,7 @@ nav ul .verson-img:hover {
     border-radius: 8px;
     z-index: -5;
   }
-  .card .background-card-left {
+  .red-card .blue-card-left {
     position: absolute;
     background-color: #2868e4;
     top: 1.5rem;
@@ -2890,6 +2889,12 @@ nav ul .verson-img:hover {
     text-align: left;
     padding-left: 3rem;
     padding-top: 2rem;
+  }
+  #visualization-card #scrolling-svg-container {
+    position: absolute;
+    top: -38rem;
+    left: -0.5rem;
+    z-index: 5;
   }
   #automation-card {
     margin-top: 2rem;
