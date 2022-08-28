@@ -2854,41 +2854,26 @@ nav ul .verson-img:hover {
     border-radius: 1rem;
     box-shadow: -2px 4px 11px -2px rgba(0, 0, 0, 0.75);
   }
-  .red-card {
-    box-sizing: border-box;
+  #card-alignment {
+    align-items: flex-start;
+  }
+  #visualization-card {
+    position: relative;
+    width: 100%;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    text-align: right;
+  }
+  #visualization-card-title {
+    position: absolute;
+    top: 0;
     font-family: "Comfortaa", cursive;
     font-size: 0.875rem;
     font-weight: 300;
     letter-spacing: 2px;
-    background-color: #d13e3e;
-    width: 95%;
-    border-radius: 20px;
-  }
-  .red-card .blue-card-right {
-    position: absolute;
-    background-color: #2868e4;
-    top: 1.5rem;
-    right: -1.5rem;
-    width: 152px;
-    height: 90%;
-    border-radius: 8px;
-    z-index: -5;
-  }
-  .red-card .blue-card-left {
-    position: absolute;
-    background-color: #2868e4;
-    top: 1.5rem;
-    left: -1.5rem;
-    width: 152px;
-    height: 90%;
-    border-radius: 8px;
-    z-index: -5;
-  }
-  #visualization-card {
-    margin-top: 3rem;
-    text-align: left;
-    padding-left: 3rem;
     padding-top: 2rem;
+    padding-left: 3rem;
+    z-index: 10;
   }
   #visualization-card #scrolling-svg-container {
     position: absolute;
@@ -2897,24 +2882,88 @@ nav ul .verson-img:hover {
     z-index: 5;
   }
   #automation-card {
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    text-align: right;
-    padding-right: 3rem;
+    position: relative;
+    width: 100%;
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+  }
+  #automation-card-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Comfortaa", cursive;
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 2px;
     padding-top: 2rem;
+    padding-right: 3rem;
+    z-index: 10;
   }
   #engineering-card {
-    margin-top: 2rem;
-    text-align: left;
-    padding-left: 3rem;
+    position: relative;
+    width: 100%;
+    margin-top: 7rem;
+    margin-left: 1rem;
+  }
+  #engineering-card-title {
+    position: absolute;
+    top: 0;
+    font-family: "Comfortaa", cursive;
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 2px;
     padding-top: 2rem;
+    padding-left: 3rem;
+    z-index: 10;
   }
   #migration-card {
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    text-align: right;
-    padding-right: 3rem;
+    position: relative;
+    width: 100%;
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+  }
+  #migration-card-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Comfortaa", cursive;
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 2px;
     padding-top: 2rem;
+    padding-right: 3rem;
+    z-index: 10;
+  }
+  .red-card {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", cursive;
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background-color: #d13e3e;
+    width: 95%;
+    height: 493px;
+    border-radius: 20px;
+  }
+  .blue-card {
+    position: absolute;
+    background-color: #2868e4;
+    top: 0;
+    width: 90%;
+    height: 493px;
+    border-radius: 8px;
+    z-index: -5;
+  }
+  .card-right {
+    right: -1rem;
+  }
+  .card-left {
+    left: -2rem;
+  }
+  .card-shrink {
+    transform: scale(0.9, 0.9);
   }
   #panel-four {
     position: relative;
