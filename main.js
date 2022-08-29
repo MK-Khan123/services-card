@@ -37,11 +37,6 @@ function polygons_animation(panel, deg = 180) {
   return tlPolygons;
 }
 
-// document.querySelector(".automation-card-panel").remove();
-// document.querySelector(".migration-card-panel").remove();
-// document.querySelector(".engineering-card-panel").remove();
-// document.querySelector(".visualization-card-panel").remove();
-
 // smooth scroller function
 function smoothScroll(content, viewport, smoothness) {
   content = gsap.utils.toArray(content)[0];
@@ -133,13 +128,13 @@ function smoothScroll(content, viewport, smoothness) {
   });
 }
 
-//! auto scroll after name animation is finished
-// const autoScroll = (time, panelOne) => {
-//   setTimeout(function () {
-//     const panelOneCooard = panelOne.getBoundingClientRect();
-//     window.scrollTo(panelOneCooard.left, 400);
-//   }, time);
-// };
+// ! auto scroll after name animation is finished
+const autoScroll = (time, panelOne) => {
+  setTimeout(function () {
+    const panelOneCooard = panelOne.getBoundingClientRect();
+    window.scrollTo(panelOneCooard.left, 400);
+  }, time);
+};
 
 // mission and vission panel background blur
 function blurMissionVisionPanel(selector, color, shadow) {
@@ -670,13 +665,13 @@ window.addEventListener("DOMContentLoaded", function () {
   smoothScroll("#smooth-content");
 
   //! first panel auto scroll
-  // autoScroll(3000, panelOne);
-  // this.addEventListener("scroll", () => {
-  //     const windowCoord = document.documentElement.getBoundingClientRect();
-  //     if (windowCoord.y === 0) {
-  //         autoScroll(1200, panelOne);
-  //     }
-  // });
+  autoScroll(3000, panelOne);
+  this.addEventListener("scroll", () => {
+      const windowCoord = document.documentElement.getBoundingClientRect();
+      if (windowCoord.y === 0) {
+          autoScroll(1200, panelOne);
+      }
+  });
 
   //! theme toggle light/dark
 
@@ -1194,16 +1189,6 @@ window.addEventListener("DOMContentLoaded", function () {
           );
       });
       //? mission and vission animation end
-
-      // document.querySelector('.services-card').remove();
-      // document.querySelector('.automation-card-panel').remove();
-      // document.querySelector('.migration-card-panel').remove();
-      // document.querySelector('.engineering-card-panel').remove();
-      // document.querySelector('.engineering-card-panel').classList.remove('panel');
-      // document.querySelector('.automation-card-panel').classList.remove('panel');
-      // document.querySelector('.migration-card-panel').classList.remove('panel');
-      // document.querySelector('.visualization-card-panel').classList.remove('panel');
-      // document.querySelector('.services-card').remove();
     },
 
     "(max-width: 499px)": function () {
@@ -1772,45 +1757,6 @@ window.addEventListener("DOMContentLoaded", function () {
             1
           );
       });
-
-  //     const serviceCard = document.querySelector(".services-card");
-  //     serviceCard.insertAdjacentHTML(
-  //       "afterbegin",
-  //       `<div id="card-alignment" class="panel visualization-card-panel">
-  //     <div id="visualization-card">
-  //         <svg id="scrolling-svg-container" width="364" height="2674" viewBox="0 0 364 2674" fill="none"
-  //             preserveAspectRatio="xMidYMid meet">
-  //             <path id="scrolling-svg"
-  //                 d="M176.434 0.999992C184.737 267.52 221.944 588.112 63.4971 634.5C-94.9495 680.888 140.497 691 159.997 654C179.497 617 -134.165 652.306 69.857 668.038C333.739 688.386 -37.7465 547.64 23.9053 706.73C81.5574 855.499 29.3982 957.489 76.7151 1036.88C124.032 1116.26 177.812 1124.04 224.997 1133C576.575 1199.74 67.3654 1246.12 205.794 1169.5C292.462 1121.53 407.421 1184.5 333.498 1184.5C259.576 1184.5 355.066 1575.64 351.998 1609C343.998 1696 96.4981 1746.87 22.9982 1710C-19.4384 1688.71 119.498 1677 193.997 1683C204.463 1683.84 335.351 1692 333.497 1796C328.498 2076.5 328.197 2171.48 351.533 2236.5M351.533 2236.5C351.533 2285 145.533 2225 177.533 2217C377.467 2167.02 424.033 2248.5 218.033 2248.5C42.4977 2248.5 369.532 2158 351.533 2236.5ZM351.533 2236.5C327.033 2429.5 386.122 2716.08 351.534 2668C301.535 2598.5 16.5344 2705.5 42.0344 2650C67.5344 2594.5 -35.9656 2685 96.0344 2641"
-  //                 stroke="white" />
-  //         </svg>
-  //         <h4 id="visualization-card-title">Visualization</h4>
-  //         <div class="red-card"></div>
-  //         <div class="blue-card card-right card-shrink"></div>
-  //     </div>
-  // </div>
-  // <div id="card-alignment" class="panel automation-card-panel">
-  //     <div id="automation-card">
-  //         <h4 id="automation-card-title">Automation</h4>
-  //         <div class="red-card"></div>
-  //         <div class="blue-card card-left card-shrink"></div>
-  //     </div>
-  // </div>
-  // <div id="card-alignment" class="panel engineering-card-panel">
-  //     <div id="engineering-card">
-  //         <h4 id="engineering-card-title">Engineering</h4>
-  //         <div class="red-card"></div>
-  //         <div class="blue-card card-right card-shrink"></div>
-  //     </div>
-  // </div>
-  // <div id="card-alignment" class="panel migration-card-panel">
-  //     <div id="migration-card">
-  //         <h4 id="migration-card-title">Migration</h4>
-  //         <div class="red-card"></div>
-  //         <div class="blue-card card-left card-shrink"></div>
-  //     </div>
-  // </div>`
-  //     );
 
       //! for movile device panel animation
       forMobileDevice(
@@ -3056,3 +3002,57 @@ document.querySelector("#work-main-mobile").addEventListener("click", () => {
     css: { height: "80%" },
   });
 });
+
+//     const serviceCard = document.querySelector(".services-card");
+//     serviceCard.insertAdjacentHTML(
+//       "afterbegin",
+//       `<div id="card-alignment" class="panel visualization-card-panel">
+//     <div id="visualization-card">
+//         <svg id="scrolling-svg-container" width="364" height="2674" viewBox="0 0 364 2674" fill="none"
+//             preserveAspectRatio="xMidYMid meet">
+//             <path id="scrolling-svg"
+//                 d="M176.434 0.999992C184.737 267.52 221.944 588.112 63.4971 634.5C-94.9495 680.888 140.497 691 159.997 654C179.497 617 -134.165 652.306 69.857 668.038C333.739 688.386 -37.7465 547.64 23.9053 706.73C81.5574 855.499 29.3982 957.489 76.7151 1036.88C124.032 1116.26 177.812 1124.04 224.997 1133C576.575 1199.74 67.3654 1246.12 205.794 1169.5C292.462 1121.53 407.421 1184.5 333.498 1184.5C259.576 1184.5 355.066 1575.64 351.998 1609C343.998 1696 96.4981 1746.87 22.9982 1710C-19.4384 1688.71 119.498 1677 193.997 1683C204.463 1683.84 335.351 1692 333.497 1796C328.498 2076.5 328.197 2171.48 351.533 2236.5M351.533 2236.5C351.533 2285 145.533 2225 177.533 2217C377.467 2167.02 424.033 2248.5 218.033 2248.5C42.4977 2248.5 369.532 2158 351.533 2236.5ZM351.533 2236.5C327.033 2429.5 386.122 2716.08 351.534 2668C301.535 2598.5 16.5344 2705.5 42.0344 2650C67.5344 2594.5 -35.9656 2685 96.0344 2641"
+//                 stroke="white" />
+//         </svg>
+//         <h4 id="visualization-card-title">Visualization</h4>
+//         <div class="red-card"></div>
+//         <div class="blue-card card-right card-shrink"></div>
+//     </div>
+// </div>
+// <div id="card-alignment" class="panel automation-card-panel">
+//     <div id="automation-card">
+//         <h4 id="automation-card-title">Automation</h4>
+//         <div class="red-card"></div>
+//         <div class="blue-card card-left card-shrink"></div>
+//     </div>
+// </div>
+// <div id="card-alignment" class="panel engineering-card-panel">
+//     <div id="engineering-card">
+//         <h4 id="engineering-card-title">Engineering</h4>
+//         <div class="red-card"></div>
+//         <div class="blue-card card-right card-shrink"></div>
+//     </div>
+// </div>
+// <div id="card-alignment" class="panel migration-card-panel">
+//     <div id="migration-card">
+//         <h4 id="migration-card-title">Migration</h4>
+//         <div class="red-card"></div>
+//         <div class="blue-card card-left card-shrink"></div>
+//     </div>
+// </div>`
+//     );
+
+// document.querySelector('.services-card').remove();
+// document.querySelector('.automation-card-panel').remove();
+// document.querySelector('.migration-card-panel').remove();
+// document.querySelector('.engineering-card-panel').remove();
+// document.querySelector('.engineering-card-panel').classList.remove('panel');
+// document.querySelector('.automation-card-panel').classList.remove('panel');
+// document.querySelector('.migration-card-panel').classList.remove('panel');
+// document.querySelector('.visualization-card-panel').classList.remove('panel');
+// document.querySelector('.services-card').remove();
+
+// document.querySelector(".automation-card-panel").remove();
+// document.querySelector(".migration-card-panel").remove();
+// document.querySelector(".engineering-card-panel").remove();
+// document.querySelector(".visualization-card-panel").remove();
