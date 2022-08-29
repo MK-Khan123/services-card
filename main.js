@@ -37,6 +37,11 @@ function polygons_animation(panel, deg = 180) {
   return tlPolygons;
 }
 
+// document.querySelector(".automation-card-panel").remove();
+// document.querySelector(".migration-card-panel").remove();
+// document.querySelector(".engineering-card-panel").remove();
+// document.querySelector(".visualization-card-panel").remove();
+
 // smooth scroller function
 function smoothScroll(content, viewport, smoothness) {
   content = gsap.utils.toArray(content)[0];
@@ -553,7 +558,9 @@ window.addEventListener("DOMContentLoaded", function () {
   const panelFive = document.querySelector("#panel-five");
 
   //! panels for mobile screen display
-  const panelVisualization = document.querySelector(".visualization-card-panel");
+  const panelVisualization = document.querySelector(
+    ".visualization-card-panel"
+  );
   const panelAutomation = document.querySelector(".automation-card-panel");
   const panelEngineering = document.querySelector(".engineering-card-panel");
   const panelMigration = document.querySelector(".migration-card-panel");
@@ -1187,6 +1194,16 @@ window.addEventListener("DOMContentLoaded", function () {
           );
       });
       //? mission and vission animation end
+
+      // document.querySelector('.services-card').remove();
+      // document.querySelector('.automation-card-panel').remove();
+      // document.querySelector('.migration-card-panel').remove();
+      // document.querySelector('.engineering-card-panel').remove();
+      // document.querySelector('.engineering-card-panel').classList.remove('panel');
+      // document.querySelector('.automation-card-panel').classList.remove('panel');
+      // document.querySelector('.migration-card-panel').classList.remove('panel');
+      // document.querySelector('.visualization-card-panel').classList.remove('panel');
+      // document.querySelector('.services-card').remove();
     },
 
     "(max-width: 499px)": function () {
@@ -1756,20 +1773,69 @@ window.addEventListener("DOMContentLoaded", function () {
           );
       });
 
+  //     const serviceCard = document.querySelector(".services-card");
+  //     serviceCard.insertAdjacentHTML(
+  //       "afterbegin",
+  //       `<div id="card-alignment" class="panel visualization-card-panel">
+  //     <div id="visualization-card">
+  //         <svg id="scrolling-svg-container" width="364" height="2674" viewBox="0 0 364 2674" fill="none"
+  //             preserveAspectRatio="xMidYMid meet">
+  //             <path id="scrolling-svg"
+  //                 d="M176.434 0.999992C184.737 267.52 221.944 588.112 63.4971 634.5C-94.9495 680.888 140.497 691 159.997 654C179.497 617 -134.165 652.306 69.857 668.038C333.739 688.386 -37.7465 547.64 23.9053 706.73C81.5574 855.499 29.3982 957.489 76.7151 1036.88C124.032 1116.26 177.812 1124.04 224.997 1133C576.575 1199.74 67.3654 1246.12 205.794 1169.5C292.462 1121.53 407.421 1184.5 333.498 1184.5C259.576 1184.5 355.066 1575.64 351.998 1609C343.998 1696 96.4981 1746.87 22.9982 1710C-19.4384 1688.71 119.498 1677 193.997 1683C204.463 1683.84 335.351 1692 333.497 1796C328.498 2076.5 328.197 2171.48 351.533 2236.5M351.533 2236.5C351.533 2285 145.533 2225 177.533 2217C377.467 2167.02 424.033 2248.5 218.033 2248.5C42.4977 2248.5 369.532 2158 351.533 2236.5ZM351.533 2236.5C327.033 2429.5 386.122 2716.08 351.534 2668C301.535 2598.5 16.5344 2705.5 42.0344 2650C67.5344 2594.5 -35.9656 2685 96.0344 2641"
+  //                 stroke="white" />
+  //         </svg>
+  //         <h4 id="visualization-card-title">Visualization</h4>
+  //         <div class="red-card"></div>
+  //         <div class="blue-card card-right card-shrink"></div>
+  //     </div>
+  // </div>
+  // <div id="card-alignment" class="panel automation-card-panel">
+  //     <div id="automation-card">
+  //         <h4 id="automation-card-title">Automation</h4>
+  //         <div class="red-card"></div>
+  //         <div class="blue-card card-left card-shrink"></div>
+  //     </div>
+  // </div>
+  // <div id="card-alignment" class="panel engineering-card-panel">
+  //     <div id="engineering-card">
+  //         <h4 id="engineering-card-title">Engineering</h4>
+  //         <div class="red-card"></div>
+  //         <div class="blue-card card-right card-shrink"></div>
+  //     </div>
+  // </div>
+  // <div id="card-alignment" class="panel migration-card-panel">
+  //     <div id="migration-card">
+  //         <h4 id="migration-card-title">Migration</h4>
+  //         <div class="red-card"></div>
+  //         <div class="blue-card card-left card-shrink"></div>
+  //     </div>
+  // </div>`
+  //     );
+
       //! for movile device panel animation
-      forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, panelAutomation, panelEngineering, panelMigration, panelFour, panelFive);
+      forMobileDevice(
+        panelOne,
+        panelTwo,
+        panelThree,
+        panelVisualization,
+        panelAutomation,
+        panelEngineering,
+        panelMigration,
+        panelFour,
+        panelFive
+      );
     },
 
     //this will be apply for all secreen sci
     all: function () {
       forDesktopScreen(panelOne, panelTwo, panelThree, panelFour, panelFive);
-    }
+    },
   });
 
   //! rotating blue and gray colored ellipse animation initialization
   ScrollTrigger.matchMedia({
-    "(min-width: 800px)": function () { },
-    "(max-width: 799px)": function () { },
+    "(min-width: 800px)": function () {},
+    "(max-width: 799px)": function () {},
     all: function () {
       blueAndGrayDesktop(
         panelTwo,
@@ -1906,7 +1972,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => { }, "+=1");
+    .add(() => {}, "+=1");
   //PANEL 2 Ends
 
   //PANEL 3 Starts
@@ -1955,7 +2021,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => { }, "+=1");
+    .add(() => {}, "+=1");
   //PANEL 3 Ends
 
   //PANEL 4 Starts
@@ -2005,7 +2071,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => { }, "+=1");
+    .add(() => {}, "+=1");
   //PANEL 4 Ends
 
   //PANEL 5 Starts
@@ -2055,7 +2121,7 @@ function blueAndGrayDesktop(
       "<"
     )
 
-    .add(() => { }, "+=1");
+    .add(() => {}, "+=1");
   //PANEL 5 Ends
 }
 
@@ -2302,7 +2368,17 @@ function forDesktopScreen(
 
 //change from anik
 //! animator for mobile screen size
-function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, panelAutomation, panelEngineering, panelMigration, panelFour, panelFive) {
+function forMobileDevice(
+  panelOne,
+  panelTwo,
+  panelThree,
+  panelVisualization,
+  panelAutomation,
+  panelEngineering,
+  panelMigration,
+  panelFour,
+  panelFive
+) {
   //animation ellipes for mobile screen size
 
   // ? panel one starts
@@ -2491,7 +2567,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       {
         x: "-18vw",
         y: "302vh",
-        rotation: "245deg",
+        rotation: "232deg",
         duration: 1,
       },
       0
@@ -2501,7 +2577,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       {
         x: "-14vw",
         y: "297vh",
-        rotation: "240deg",
+        rotation: "232deg",
         duration: 1,
       },
       0
@@ -2511,7 +2587,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       {
         x: "7vw",
         y: "302vh",
-        rotation: "240deg",
+        rotation: "237deg",
         duration: 1,
       },
       0
@@ -2531,9 +2607,9 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-ellipse",
       {
-        x: "6vw",
+        x: "9vw",
         y: "415vh",
-        rotation: "185deg",
+        rotation: "-208deg",
         duration: 1,
       },
       0
@@ -2550,10 +2626,10 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-small-ellipse",
       {
-        x: "-162vw",
-        y: "365vh",
-        rotation: "-200deg",
-        duration: 1,        
+        x: "-216vw",
+        y: "383vh",
+        rotation: "148deg",
+        duration: 1,
       },
       0
     )
@@ -2561,7 +2637,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-yellow-polygon",
       {
         x: "-5vw",
-        y: "398vh",
+        y: "403vh",
         rotation: "0deg",
         duration: 1,
       },
@@ -2571,7 +2647,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-blue-polygon",
       {
         x: "2vw",
-        y: "394vh",
+        y: "402vh",
         rotation: "0deg",
         duration: 1,
       },
@@ -2601,8 +2677,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-ellipse",
       {
-        x: "6vw",
-        y: "315vh",
+        x: "12vw",
+        y: "515vh",
         rotation: "185deg",
         duration: 1,
       },
@@ -2620,8 +2696,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-small-ellipse",
       {
-        x: "-162vw",
-        y: "285vh",
+        x: "-270vw",
+        y: "481vh",
         rotation: "-200deg",
         duration: 1,
       },
@@ -2631,8 +2707,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-yellow-polygon",
       {
         x: "-18vw",
-        y: "494vh",
-        rotation: "245deg",
+        y: "509vh",
+        rotation: "232deg",
         duration: 1,
       },
       0
@@ -2641,8 +2717,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-blue-polygon",
       {
         x: "-14vw",
-        y: "491vh",
-        rotation: "240deg",
+        y: "500vh",
+        rotation: "233deg",
         duration: 1,
       },
       0
@@ -2672,9 +2748,9 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-ellipse",
       {
-        x: "6vw",
-        y: "315vh",
-        rotation: "185deg",
+        x: "15vw",
+        y: "615vh",
+        rotation: "-208deg",
         duration: 1,
       },
       0
@@ -2691,9 +2767,9 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-small-ellipse",
       {
-        x: "-162vw",
-        y: "285vh",
-        rotation: "-200deg",
+        x: "-324vw",
+        y: "579vh",
+        rotation: "148deg",
         duration: 1,
       },
       0
@@ -2702,7 +2778,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-yellow-polygon",
       {
         x: "-5vw",
-        y: "590vh",
+        y: "603vh",
         rotation: "0deg",
         duration: 1,
       },
@@ -2712,7 +2788,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-blue-polygon",
       {
         x: "2vw",
-        y: "588vh",
+        y: "600vh",
         rotation: "0deg",
         duration: 1,
       },
@@ -2742,8 +2818,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-ellipse",
       {
-        x: "6vw",
-        y: "315vh",
+        x: "18vw",
+        y: "715vh",
         rotation: "185deg",
         duration: 1,
       },
@@ -2761,8 +2837,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-small-ellipse",
       {
-        x: "-162vw",
-        y: "285vh",
+        x: "-378vw",
+        y: "677vh",
         rotation: "-200deg",
         duration: 1,
       },
@@ -2772,8 +2848,8 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-yellow-polygon",
       {
         x: "-18vw",
-        y: "686vh",
-        rotation: "245deg",
+        y: "709vh",
+        rotation: "233deg",
         duration: 1,
       },
       0
@@ -2781,9 +2857,9 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-blue-polygon",
       {
-        x: "2vw",
-        y: "685vh",
-        rotation: "240deg",
+        x: "-14vw",
+        y: "698vh",
+        rotation: "233deg",
         duration: 1,
       },
       0
@@ -2799,7 +2875,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     );
   // ? panel migration ends
 
-  // ? panel four starts
+  // ? panel 4 starts
   gsap
     .timeline({
       scrollTrigger: {
@@ -2812,9 +2888,9 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-ellipse",
       {
-        x: "6vw",
-        y: "315vh",
-        rotation: "185deg",
+        x: "21vw",
+        y: "815vh",
+        rotation: "-208deg",
         duration: 1,
       },
       0
@@ -2831,9 +2907,9 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
     .to(
       "#mobile-gray-small-ellipse",
       {
-        x: "-162vw",
-        y: "285vh",
-        rotation: "-200deg",
+        x: "-432vw",
+        y: "775vh",
+        rotation: "215deg",
         duration: 1,
       },
       0
@@ -2842,7 +2918,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-yellow-polygon",
       {
         x: "-5vw",
-        y: "782vh",
+        y: "796vh",
         rotation: "0deg",
         duration: 1,
       },
@@ -2852,7 +2928,7 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       "#mobile-blue-polygon",
       {
         x: "2vw",
-        y: "782vh",
+        y: "800vh",
         rotation: "0deg",
         duration: 1,
       },
@@ -2867,7 +2943,78 @@ function forMobileDevice(panelOne, panelTwo, panelThree, panelVisualization, pan
       },
       0
     );
-  // ? panel migration ends
+  // ? panel 4 ends
+
+  // ? panel 5 starts
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: panelFive,
+        start: "top bottom",
+        end: "+=100%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#mobile-gray-ellipse",
+      {
+        x: "24vw",
+        y: "915vh",
+        rotation: "185deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-ellipse",
+      {
+        x: "-199vw",
+        y: "884vh",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-gray-small-ellipse",
+      {
+        x: "-486vw",
+        y: "873vh",
+        rotation: "-200deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-yellow-polygon",
+      {
+        x: "-18vw",
+        y: "901vh",
+        rotation: "237deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-blue-polygon",
+      {
+        x: "-14vw",
+        y: "903vh",
+        rotation: "237deg",
+        duration: 1,
+      },
+      0
+    )
+    .to(
+      "#mobile-red-polygon",
+      {
+        x: "7vw",
+        y: "902vh",
+        rotation: "240deg",
+        duration: 1,
+      },
+      0
+    );
+  // ? panel 5 ends
 }
 
 //Functions for mobile display size (max-width: 576px)
@@ -2877,11 +3024,11 @@ const hoverOverServicesMobile = () => {
   const servicesIcon = document.getElementById("services-mobile-ai-vector");
   const glassBackground = document.getElementById("services-mobile-wrapper");
 
-  console.log(servicesIcon.classList);
-
-  servicesIcon.classList.add("ai-vector-hover");
+  servicesIcon.classList.add("ai-vector-hover-small");
 
   glassBackground.classList.remove("mobile-glass-background");
+
+  console.log(servicesIcon.classList);
 
   title.style.display = "none";
   tagline.style.visibility = "hidden";
@@ -2906,6 +3053,6 @@ const clinicManagementAnimation = () => {
 document.querySelector("#work-main-mobile").addEventListener("click", () => {
   gsap.timeline().to("#work-main-mobile", {
     duration: 1.5,
-    css: { height: "100%" },
+    css: { height: "80%" },
   });
 });

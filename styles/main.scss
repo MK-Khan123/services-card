@@ -836,6 +836,10 @@ nav {
   }
 }
 
+.migration-card-panel, .engineering-card-panel, .visualization-card-panel, .automation-card-panel {
+  display: none;
+}
+
 #panel-three {
   position: relative;
 
@@ -3084,6 +3088,18 @@ nav {
         z-index: 30;
       }
 
+      &-heading {      
+        display: block;
+        position: absolute;
+        top: -2.5rem;
+        left: 0.625rem;
+        font-size: 1.25rem;
+        background: linear-gradient(89.74deg, #8aa0d8 17.02%, #ffffff 28.07%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
       &-title {
         text-align: left;
         padding: 2rem 1rem;
@@ -3136,8 +3152,8 @@ nav {
         height: auto;
       }
 
-      .ai-vector-hover {
-        transform: rotate(-360deg) scale(0.425);
+      .ai-vector-hover-small {
+        transform: rotate(-360deg) scale(0.6);
       }
     }
 
@@ -3157,6 +3173,9 @@ nav {
   //Extended version of panel-three (CARDS)
   #card-alignment {
     align-items: flex-start; //To over-ride align-items: center coming from "panel" class
+  }
+  .migration-card-panel, .engineering-card-panel, .visualization-card-panel, .automation-card-panel {
+    display: block !important;
   }
 
   #visualization-card {
@@ -3289,12 +3308,16 @@ nav {
       display: none;
     }
 
-    #work-main-title {
-      text-align: left;
+    #work-main-title {      
+      display: block;
       position: absolute;
       top: 5rem;
-      left: 5%;
-      font-size: 1.5rem;
+      left: 22px;
+      font-size: 1.25rem;
+      background: linear-gradient(89.74deg, #8aa0d8 17.02%, #ffffff 28.07%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     #work-main-mobile {
@@ -3557,5 +3580,5 @@ nav {
         font-size: 11px;
       }
     }
-  }
+  }  
 }
